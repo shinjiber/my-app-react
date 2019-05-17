@@ -1,17 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Profile from './App';
-
-const Taro = {
-  name: "taro",
-  age: 10,
-  love: "Game"
-};
-
+import Hello from './App';
 
 
 ReactDOM.render(
-  <Profile data={Taro}/>,
+  <Hello>My name is Taro.</Hello>,
   document.getElementById('root')
 );
