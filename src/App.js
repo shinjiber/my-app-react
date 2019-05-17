@@ -1,30 +1,22 @@
 import React, { Component } from 'react';
 
-class Profile extends Component {
+class Button extends Component {
   constructor() {
     super();
-    this.state = {
-      name: "taro",
-      data: {
-        height: 170,
-        weight: 65
-      }
-    };
   }
 
-  render () {
-    return (
+  handleClick() {
+    alert('button click!');
+  }
+
+  render() {
+    return(
       <div>
-        <h1>{this.state.name}</h1>
-          <dl>
-            <dt>HEIGHT</dt>
-            <dd>{this.state.data.height}</dd>
-            <dt>WEIGHT</dt>
-            <dd>{this.state.data.weight}</dd>
-          </dl>
+        <button onClick={this.handleClick}>BUTTON</button>
+        <button>BUTTON2</button>
       </div>
     );
   }
 }
 
-export default Profile;
+export default Button;

@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Profile from './App';
+import Button from './App';
 
 
 ReactDOM.render(
-  <Profile  />,
+  <Button  />,
   document.getElementById('root')
 );
