@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Switch from './App';
+import Profile from './App';
 
 
 ReactDOM.render(
-  <Switch  />,
+  <Profile  />,
   document.getElementById('root')
 );

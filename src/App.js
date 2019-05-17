@@ -1,20 +1,30 @@
 import React, { Component } from 'react';
 
-class Switch extends Component {
+class Profile extends Component {
   constructor() {
     super();
     this.state = {
-      power: false
+      name: "taro",
+      data: {
+        height: 170,
+        weight: 65
+      }
     };
   }
 
   render () {
     return (
-      <p>
-        {this.state.power ? "on" : "off"}
-      </p>
+      <div>
+        <h1>{this.state.name}</h1>
+          <dl>
+            <dt>HEIGHT</dt>
+            <dd>{this.state.data.height}</dd>
+            <dt>WEIGHT</dt>
+            <dd>{this.state.data.weight}</dd>
+          </dl>
+      </div>
     );
   }
 }
 
-export default Switch;
+export default Profile;
