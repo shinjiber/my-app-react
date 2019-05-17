@@ -1,7 +1,20 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const Hello = (props) => {
-  return <p>{props.children}</p>
-};
+class Switch extends Component {
+  constructor() {
+    super();
+    this.state = {
+      power: false
+    };
+  }
 
-export default Hello;
+  render () {
+    return (
+      <p>
+        {this.state.power ? "on" : "off"}
+      </p>
+    );
+  }
+}
+
+export default Switch;

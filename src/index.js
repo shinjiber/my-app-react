@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Hello from './App';
+import Switch from './App';
 
 
 ReactDOM.render(
-  <Hello>My name is Taro.</Hello>,
+  <Switch  />,
   document.getElementById('root')
 );
