@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Button from './App';
+import Switch from './App';
 
 
 ReactDOM.render(
-  <Button  />,
+  <Switch  />,
   document.getElementById('root')
 );

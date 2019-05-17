@@ -1,22 +1,28 @@
 import React, { Component } from 'react';
 
-class Button extends Component {
+class Switch extends Component {
   constructor() {
     super();
+    this.handleClick = this.handleClick.bind(this);
+    this.state = {
+      power: false
+    };
   }
 
   handleClick() {
-    alert('button click!');
+    this.setState({
+      power: !this.state.power
+    })
   }
 
   render() {
-    return(
+    return (
       <div>
-        <button onClick={this.handleClick}>BUTTON</button>
-        <button>BUTTON2</button>
+        <p>{this.state.power ? 'on' : 'off'}</p>
+        <button onClick={this.handleClick}>button</button>
       </div>
     );
   }
 }
 
-export default Button;
+export default Switch;
