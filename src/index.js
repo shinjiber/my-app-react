@@ -1,9 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import InformationArea from './App';
+
+const company = {
+  phone: "089708780",
+  mail: 'hoge@huga.com',
+  name: "hoge-company",
+  account: "hoge"
+}
 
 ReactDOM.render(
-  <App />,
+  <InformationArea props={company}/>,
   document.getElementById('root')
 )
